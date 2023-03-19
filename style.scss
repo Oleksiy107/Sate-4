@@ -36,18 +36,12 @@ a {
     flex-direction: column;
     justify-content: center;
   }
-  &__container1 {
+  &__img {
     display: flex;
     align-items: center;
     flex-direction: row;
-    gap: 50px;
+    gap: 25px;
   }
-}
-.massenger__img {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  gap: 25px;
 }
 .icon-facebook-1:before {
   content: "\e902";
@@ -102,7 +96,6 @@ a {
     padding: 10px 60px;
   }
 }
-
 .main {
   &__box {
     width: 80%;
@@ -151,9 +144,6 @@ a {
     font-size: 56px;
     font-weight: 700;
     line-height: 74px;
-  }
-  &__text-box {
-    margin: 20px;
   }
   &__container-traveling {
     display: grid;
@@ -361,20 +351,15 @@ a {
     flex-direction: column;
     justify-content: center;
   }
-  &__container1 {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    color: #333333;
-    gap: 50px;
-  }
+
   &__list {
     display: flex;
     gap: 30px;
   }
-  &__massenger {
+  &__img-block {
     display: flex;
     align-items: center;
+    flex-direction: row;
     gap: 25px;
   }
 }
