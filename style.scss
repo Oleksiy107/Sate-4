@@ -36,12 +36,12 @@ a {
     flex-direction: column;
     justify-content: center;
   }
-  &__img {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 25px;
-  }
+}
+.pictures {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
 }
 .icon-facebook-1:before {
   content: "\e902";
@@ -86,7 +86,7 @@ a {
 .btn {
   background: $green-color;
   border: none;
-  &--item-header {
+  &--item-slogan {
     padding: 10px 80px;
   }
   &--btn-item1 {
@@ -97,10 +97,10 @@ a {
   }
 }
 .main {
-  &__box {
+  &__slogan {
     width: 80%;
     position: absolute;
-    height: 600px;
+    height: 700px;
     top: 250px;
     left: 160px;
     display: flex;
@@ -108,81 +108,14 @@ a {
     align-items: center;
     justify-content: space-around;
   }
-  &__title-container {
-    text-align: center;
-    font-size: 84px;
-  }
-  &__container-info {
-    display: flex;
-    width: 80%;
-    align-items: center;
-    padding: 50px;
-    color: white;
-    flex-direction: column;
-    background: $blackrgba-color;
-  }
-  &__text-container {
-    margin: 20px 0;
-  }
-  &__btn {
-    font-family: Lato;
-    font-size: 16px;
-    font-weight: 900;
-    line-height: 19px;
-  }
-  &__container2 {
+
+  &__info-container {
     padding: 50px 100px;
   }
-  &__info-about-us {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  &__title-About-us {
-    font-family: Roboto Slab;
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 74px;
-  }
-  &__container-traveling {
+  &__section2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-  }
-  &__img-main-box {
-    max-width: 200px;
-    position: relative;
-    top: -40px;
-  }
-  &__box-traveling {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  &__h2-img {
-    font-family: Roboto Slab;
-    font-size: 104px;
-    font-weight: 700;
-    color: $green-color;
-    text-align: center;
-    position: relative;
-    top: 40px;
-  }
-
-  &__text-img {
-    width: 70%;
-    text-align: center;
-  }
-  &__text-info2 {
-    font-family: Quicksand;
-    font-size: 20px;
-    font-weight: 500;
-    margin: 30px 0;
-    align-items: center;
-    line-height: 32px;
-    width: 60%;
   }
   &__trip {
     background-image: url(./img/ken-cheung-VbLTNceBTFE-unsplash\ 1.png);
@@ -195,17 +128,150 @@ a {
     padding: 50px 100px;
   }
 
-  &__title1-photo {
+  &__picture1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 130px 30px;
+  }
+  &__imgs1 {
+    display: flex;
+    margin: 20px 0;
+    :nth-child(2) {
+      margin: 0 40px;
+    }
+  }
+  &__button-massenger {
+    text-align: center;
+  }
+  &__text-instagram {
+    font-family: Quicksand;
+    font-size: 14px;
+    margin: 10px 0;
+    font-weight: 500;
+  }
+  &__picture2 {
+    background-image: url(./img/background.png);
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  &__imgs2 {
+    display: flex;
+    :nth-child(2) {
+      margin: 0 100px;
+    }
+  }
+  &__img-place {
+    width: 500px;
+    @media screen and (max-width: 1600px) {
+      width: 400px;
+    }
+    @media screen and (max-width: 1400px) {
+      width: 220px;
+    }
+  }
+}
+.title-places {
+  font-family: Roboto Slab;
+  font-size: 56px;
+  font-weight: 700;
+  &--color {
+    color: white;
+  }
+}
+.slogan {
+  &__title {
+    text-align: center;
+    font-family: Lora;
+    font-size: 84px;
+    font-weight: 700;
+  }
+  &__quote {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    flex-direction: column;
+    background: $blackrgba-color;
+  }
+  &__subtitle {
+    margin: 20px 0;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+  }
+  &__btn {
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 19px;
+  }
+}
+.info-container {
+  &__section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.section1 {
+  &__title {
+    font-family: Roboto Slab;
+    font-size: 56px;
+    font-weight: 700;
+  }
+  &__subtitle {
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 30px 0;
+    line-height: 32px;
+    width: 60%;
+  }
+}
+.section2 {
+  &__box-traveling {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-family: Roboto Slab;
+    font-size: 104px;
+    font-weight: 700;
+    color: $green-color;
+    text-align: center;
+    position: relative;
+    top: 40px;
+  }
+  &__subtitle {
+    font-family: Quicksand;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+  }
+  &__img {
+    max-width: 200px;
+    position: relative;
+    top: -40px;
+  }
+}
+.trip {
+  &__title1 {
     font-family: Roboto Slab;
     font-size: 56px;
     font-weight: 700;
     line-height: 74px;
   }
-  &__title2-photo {
+  &__title2 {
     font-family: Roboto Slab;
     font-size: 124px;
     font-weight: 700;
-    margin: 10px 0;
   }
   &__text-item {
     font-family: Quicksand;
@@ -230,22 +296,6 @@ a {
     font-size: 24px;
     font-weight: 500;
   }
-  &__text-img {
-    font-family: Quicksand;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 32px;
-  }
-  &--btn-item1 {
-    font-family: Quicksand;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  &--btn-item2 {
-    font-family: Quicksand;
-    font-size: 20px;
-    font-weight: 700;
-  }
   &__discount {
     margin: 20px 0;
     font-family: Quicksand;
@@ -253,85 +303,11 @@ a {
     font-weight: 500;
     text-align: center;
   }
-
-  &__info3 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 130px 30px;
-  }
-  &__box-imgs {
-    display: flex;
-    margin: 20px 0;
-    :nth-child(2) {
-      margin: 0 40px;
-    }
-  }
-  &__img-place {
-    width: 350px;
-  }
-
-  &__button-massenger {
-    text-align: center;
-  }
-  &__text-instagram {
+  &--btn-item1 {
     font-family: Quicksand;
-    font-size: 14px;
-    font-weight: 500;
+    font-size: 20px;
+    font-weight: 700;
   }
-  &__info4 {
-    background-image: url(./img/background.png);
-    height: 550px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__box-imgs2 {
-    display: flex;
-    :nth-child(2) {
-      margin: 0 100px;
-    }
-  }
-  &__img-place {
-    width: 500px;
-    @media screen and (max-width: 1600px) {
-      width: 400px;
-    }
-    @media screen and (max-width: 1400px) {
-      width: 220px;
-    }
-  }
-  &__button-massenger {
-    text-align: center;
-  }
-  &__text-instagram {
-    margin: 10px 0;
-  }
-}
-
-.title-place {
-  font-family: Roboto Slab;
-  font-size: 56px;
-  font-weight: 700;
-  line-height: 74px;
-  &--color {
-    color: white;
-    margin: 20px 0;
-  }
-}
-
-.title-container {
-  font-family: Lora;
-  font-size: 84px;
-  font-weight: 700;
-}
-.text-box {
-  font-family: Lato;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 29px;
 }
 .footer {
   background: url(./img/imgMountains\ 1.png);
@@ -356,12 +332,12 @@ a {
     display: flex;
     gap: 30px;
   }
-  &__img-block {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    gap: 25px;
-  }
+}
+.pictures {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 25px;
 }
 .icon-twitter-2:before {
   content: "\e904";
